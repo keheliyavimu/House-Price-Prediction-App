@@ -1,5 +1,6 @@
 ![Project Banner](assets/ss.png)
 
+
 # 🏡 Bangalore House Price Prediction – Full Stack ML Project
 
 A complete end‑to‑end Machine Learning application that predicts house prices in Bangalore using a trained regression model.  
