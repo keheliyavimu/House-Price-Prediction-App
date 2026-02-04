@@ -1,4 +1,4 @@
-![Project Banner](assets/ss.png)
+![Project Banner](assets/ss.PNG)
 
 
 # 🏡 Bangalore House Price Prediction – Full Stack ML Project
