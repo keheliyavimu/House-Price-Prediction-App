@@ -1,72 +1,66 @@
 # 🏡 Bangalore House Price Prediction – Full Stack ML Project
 
-A complete end‑to‑end Machine Learning project that predicts house prices in Bangalore using a trained regression model.
-
-This project includes:
-
-- A frontend client (HTML/CSS/JS)
-- A Flask backend server
-- A trained ML model (pickle)
-- Supporting utilities and artifacts
-
-The goal is to provide a simple web interface where users can input property details and receive an estimated price instantly.
+A complete end‑to‑end Machine Learning application that predicts house prices in Bangalore using a trained regression model.  
+The system integrates a lightweight HTML/JS frontend, a Flask backend API, and a production‑ready ML model.
 
 ---
 
 ## 🧠 Project Overview
 
-This project predicts house prices based on:
+This project estimates house prices based on:
 
 - Location  
 - Square footage  
 - Number of bedrooms (BHK)  
 - Number of bathrooms  
 
-The model was trained using a dataset of Bangalore house prices and deployed using a Flask API.
+The model was trained on Bangalore housing data and deployed through a Flask API for real‑time predictions.
 
 ---
 
 ## 🧪 Machine Learning Model
 
-The model is built using:
+Built using:
 
 - Python  
 - Pandas  
 - NumPy  
 - Scikit‑learn  
 
-Inside the `model/` folder:
+Model components inside the `model/` directory:
 
-- **bangalore_house_price_prediction.ipynb** → Jupyter notebook for data cleaning, feature engineering, and model training  
-- **model.pkl** → Trained regression model  
-- **columns.json** → List of input features used by the model  
+- **bangalore_house_price_prediction.ipynb** – Data cleaning, feature engineering, model training  
+- **model.pkl** – Trained regression model  
+- **columns.json** – Feature names used by the model  
 
 ---
 
 ## 🖥️ Frontend (client/)
 
-The frontend is a simple, clean UI built with:
+A simple, responsive UI built with:
 
-- **app.html** → Main webpage  
-- **app.css** → Styling  
-- **app.js** → Sends user inputs to the backend API and displays predictions  
+- **app.html** – Main interface  
+- **app.css** – Styling  
+- **app.js** – Sends user inputs to the backend and displays predictions  
 
-Users enter property details, and the page fetches predictions from the Flask server.
+Users enter property details, and the frontend fetches predictions from the Flask server.
 
 ---
 
 ## 🔧 Backend (server/)
 
-The backend is powered by **Flask**.
+Powered by **Flask**, responsible for serving predictions and model metadata.
 
-- **server.py** → Main API server  
-- **util.py** → Loads the model, processes inputs, and returns predictions  
-- **artifacts/** → Contains the production model and feature columns  
+Key files:
+
+- **server.py** – Main API server  
+- **util.py** – Loads model, processes inputs, returns predictions  
+- **artifacts/** – Production model + feature columns  
 
 ### API Endpoints
 
-- `/predict_home_price` → Returns predicted price  
-- `/get_location_names` → Returns list of locations  
+- `GET /get_location_names` – Returns list of available locations  
+- `POST /predict_home_price` – Returns predicted house price  
 
 ---
 
@@ -75,12 +69,15 @@ The backend is powered by **Flask**.
 ### 1. Install dependencies
 ```bash
 pip install -r requirements.txt
+```
 
-## 📌 Future Enhancements
-Add dropdown for locations
+### 2. Start the Flask backend
+```bash
+python server/server.py
+```
 
-### Improve model accuracy
-
-Deploy to cloud (Render/Railway/EC2)
-
-
+### 3. Open the frontend
+Open:
+```
+client/app.html
+```
