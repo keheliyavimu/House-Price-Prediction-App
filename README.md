@@ -13,35 +13,6 @@ The goal is to provide a simple web interface where users can input property det
 
 ---
 
-## 📁 Project Structure
-
-BHP/
-│
-├── client/
-│   ├── app.html
-│   ├── app.js
-│   ├── app.css
-│
-├── server/
-│   ├── server.py
-│   ├── util.py
-│   ├── artifacts/
-│   │   ├── model.pkl
-│   │   ├── columns.json
-│   └── pycache/   (ignored)
-│
-├── model/
-│   ├── bangalore_house_price_prediction.ipynb
-│   ├── model.pkl
-│   ├── columns.json
-│
-├── .idea/              (ignored)
-└── README.md
-md
-
-
----
-
 ## 🧠 Project Overview
 
 This project predicts house prices based on:
@@ -104,5 +75,12 @@ The backend is powered by **Flask**.
 ### 1. Install dependencies
 ```bash
 pip install -r requirements.txt
+
+## 📌 Future Enhancements
+Add dropdown for locations
+
+### Improve model accuracy
+
+Deploy to cloud (Render/Railway/EC2)
 
 
